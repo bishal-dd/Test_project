@@ -13,6 +13,7 @@ class RegisterController extends Controller
     {
         $response = RoleModel::where("status", "Active")->get();
         return view("register")->with(compact("response"));
+        //this is;
     }
 
     public function create_role(Request $request)
